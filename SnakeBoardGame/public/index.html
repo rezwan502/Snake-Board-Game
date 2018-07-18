@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+ 
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon-image.ico">
+    <title>SnakeBoardGame</title>
+</head>
+
+<body>
+
+   <div class="row">
+        <div class="column">
+            <div id="hiddenImages_1"></div>
+        </div>
+
+        <div class="column">
+            <div id="hiddenImages_2"></div>
+        </div>
+        <div class="column">
+            <div id="hiddenImages_3"></div>
+        </div>
+        <div class="column">
+            <div id="hiddenImages_4"></div>
+        </div>
+        <div class="column">
+            <div id="hiddenImages_5"></div>
+        </div>
+        <div class="column">
+            <div id="hiddenImages_6"></div>
+        </div>
+        <div class="column">
+            <div id="hiddenImages_7"></div>
+        </div>
+        <div class="column">
+            <div id="hiddenImages_8"></div>
+        </div>
+        <div class="column">
+            <div id="hiddenImages_9"></div>
+        </div>
+        <div class="column">
+            <div id="hiddenImages_10"></div>
+            
+        </div>
+
+    </div>
+
+    <div class="player-info-panel" style="margin-top:-40%; padding-left:50%">
+        <div class="player-name" style="margin-top: 10%; margin-left:-7%">
+            <div class="player-1" style="display: inline">
+                <span class="activered" id="redactive" style="display:none"></span>
+                <input type="text" placeholder="player-1" id="player-1"> 
+                <span class="dot" id="red"></span>
+                <img src = "crown.png" class="crown-1" style="display:none">
+            </div>
+            </br>
+            <div class="player-2" style="display: inline">
+                 <span class="activeblue" id="blueactive" style="display:none"></span>
+                <input type="text" placeholder="player-2" id="player-2"> 
+                <span class="dot" id="blue"></span>
+                <img src = "crown.png" class="crown-2" style="display:none">
+            </div>
+        </div>
+
+
+        <button class="btn-roll"><i class="far fa-play-circle"></i>Roll dice</button>
+        <button class="btn-new"><i class="fas fa-plus-circle"></i>New game</button>
+        
+        <img src="dice/dice-5.png" alt="Dice" class="dice">
+        <div class="message"></div>
+        <img src="dice/dice-still.png" alt="Dice" class="dice-still">
+
+    </div>
+    <div class="play-rules">
+        
+    </div>
+    
+    <div class="winningmessage"></div>
+    <div class="copyright">
+        &copy;Rezwanul Islam
+        <p>rezwan.sec@gmail.com</p>
+    </div>
+
+
+ <div class="dotred" style="position:relative;display: none"> </div>
+ <div class="dotblue" style="position:relative;display: none"> </div>
+  
+
+    <script src="play.js"></script>
+</body>
+
+</html>

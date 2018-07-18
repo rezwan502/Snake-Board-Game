@@ -1,0 +1,234 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+}
+
+.row {
+    width: 40%;
+
+}
+
+.column {
+    float: left;
+    width: 10%;
+
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #eb812a;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    font-weight: 700;
+}
+
+button:hover i {
+    margin-right: 20px;
+}
+
+button:focus {
+    outline: none;
+}
+
+i {
+    color: #00a551;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    text-shadow: #00a551;
+    line-height: 1;
+    vertical-align: text-top;
+    transition: margin 0.3s;
+}
+
+.btn-new {
+    top: 45px;
+}
+
+.btn-roll {
+    top: 400px;
+}
+
+
+.dice {
+    position: absolute;
+    left: 47%;
+    top: 275px;
+    transform: scale(1);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgb(0, 0, 0);
+
+    -webkit-transform: scale(0);
+    transition: 1s ease;
+
+}
+
+.dice-still {
+    position: absolute;
+    left: 45%;
+    top: 275px;
+    transform: scale(1);
+    height: 100px;
+    -webkit-transform: scale(1);
+    transition: 1s ease;
+
+}
+
+
+#player-1 {
+    color: red;
+    font-size: 14 px;
+    font-weight: bold;
+
+}
+
+#player-2 {
+    color: blue;
+    font-size: 14 px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#player-1,
+#player-2 {
+
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 180px;
+    text-transform: uppercase;
+
+}
+
+.dot {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    z-index=1;
+    background: black;
+    margin-left: 1%;
+}
+
+#red {
+    background: red;
+}
+
+#blue {
+    background: blue;
+}
+
+.dotred {
+    border: 15px solid red;
+    position: relative;
+    border-radius: 50%;
+}
+
+.dotblue {
+    border: 15px solid blue;
+    position: relative;
+    border-radius: 50%;
+}
+
+.message {
+
+    font-size: 20px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 3%;
+    margin-left: 7%;
+    width: 350px;
+    color: blue;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.crown-1,
+.crown-2 {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin-left: 6px;
+    margin-bottom: -10px;
+}
+
+.winningmessage {
+    margin-top: 21%;
+    font-size: 40px;
+    font-family: 'Lato';
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.play-rules {
+    font-family: 'Lato';
+    font-weight: bolder;
+    margin-top: -26%;
+    margin-left: 72%;
+    background-color: #73bae8;
+    height: 200px;
+    width: 28%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #0000001f;
+}
+.activered{
+    border: 15px solid gold;
+    position: absolute;
+    border-radius: 50%;
+    display: inline-block;
+    z-index=1;
+    background: black;
+    margin-left: -3%;
+    margin-top: 0.5%; 
+}
+.activeblue{
+    border: 15px solid gold;
+    position: absolute;
+    border-radius: 50%;
+    display: inline-block;
+    z-index=1;
+    background: black;
+    margin-left: -3%;
+    margin-top: 2.5%;
+}
+.copyright{
+    font-family: 'Lato';
+    font-weight: bolder;
+    background-color: #8198a787;
+    position: absolute;
+    margin-left: 84%;
+    text-align: center;
+    padding: 8px;
+    border: 5px solid #271e1e1f;
+}
